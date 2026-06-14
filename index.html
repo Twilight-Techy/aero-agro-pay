@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AeroAgro Pay — Drone-as-a-Service for Every Farmer</title>
+    <meta name="description" content="AeroAgro Pay transforms OPay's network into Africa's first drone-powered precision agriculture platform. Pay via the OPay app or USSD — a drone mission fires instantly." />
+    <meta name="keywords" content="AeroAgro Pay, OPay, drone agriculture, precision farming, Africa fintech, DaaS" />
+    <meta property="og:title" content="AeroAgro Pay — Drone-as-a-Service for Every Farmer" />
+    <meta property="og:description" content="One tap or one dial. One drone. One harvest. Powered by OPay." />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+
+    <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+    <nav class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo" id="nav-logo">
+          <span class="nav__logo-icon">⬡</span>
+          <span class="nav__logo-text">AeroAgro<span class="accent">Pay</span></span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="#problem" class="nav__link">Problem</a></li>
+          <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
+          <li><a href="#demo" class="nav__link">Live Demo</a></li>
+          <li><a href="#network" class="nav__link">Aero-Agents</a></li>
+          <li><a href="#impact" class="nav__link">Impact</a></li>
+        </ul>
+        <a href="#demo" class="btn btn--nav" id="nav-cta"><span class="btn__icon">▶</span> Watch Demo</a>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section class="hero" id="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Powered by OPay Infrastructure
+        </div>
+        <h1 class="hero__headline">
+          One Tap.<br />
+          <span class="hero__headline-accent">One Drone.</span><br />
+          One Harvest.
+        </h1>
+        <p class="hero__sub">
+          Pay &#8358;2,500 via the OPay app or USSD. A drone takes off. Precision agriculture, no ownership required.
+        </p>
+        <div class="hero__actions">
+          <a href="#demo" class="btn btn--primary" id="hero-cta-demo">
+            <span class="btn__icon">▶</span> Watch Live Demo
+          </a>
+          <a href="#how-it-works" class="btn btn--ghost" id="hero-cta-learn">
+            How It Works
+          </a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" id="scroll-hint">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PROBLEM ═══════════════════════════ -->
+    <section class="problem" id="problem">
+      <div class="container">
+        <div class="section-label">The Problem</div>
+        <h2 class="section-title">Precision Agriculture is a <span class="accent">Privilege</span></h2>
+        <div class="problem__grid">
+          <div class="problem__card problem__card--bad" id="prob-card-1">
+            <div class="problem__card-icon">💸</div>
+            <h3>Drones Cost $5,000+</h3>
+            <p>An agricultural drone costs more than a smallholder farmer earns in 3 years. Ownership is impossible.</p>
+          </div>
+          <div class="problem__card problem__card--bad" id="prob-card-2">
+            <div class="problem__card-icon">📉</div>
+            <h3>30% Crop Loss Annually</h3>
+            <p>Without precision pest/disease detection, Nigerian farmers lose nearly a third of their yield every season.</p>
+          </div>
+          <div class="problem__card problem__card--bad" id="prob-card-3">
+            <div class="problem__card-icon">🏦</div>
+            <h3>70% Are Unbanked</h3>
+            <p>The farmers who need the most help are cut off from the financial infrastructure that could fund solutions.</p>
+          </div>
+          <div class="problem__card problem__card--solution" id="prob-card-4">
+            <div class="problem__card-icon">⚡</div>
+            <h3>AeroAgro Pay Solves All Three</h3>
+            <p>No ownership. No bank account needed. Just a feature phone and ₦2,500.</p>
+            <div class="problem__card-cta">See how →</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ HOW IT WORKS ═══════════════════════════ -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-label">The Core Loop</div>
+        <h2 class="section-title">From Payment to <span class="accent">Airborne</span> in Minutes</h2>
+
+        <div class="steps">
+          <div class="step" id="step-1">
+            <div class="step__number">01</div>
+            <div class="step__icon-wrap">
+              <div class="step__icon">📱</div>
+            </div>
+            <div class="step__content">
+              <h3>Farmer Initiates Payment</h3>
+              <p>Via the <strong>OPay mobile app</strong> or a <strong>USSD shortcode</strong> on any feature phone. The farmer selects mission type: spraying or crop-health mapping.</p>
+              <div class="step__detail step__detail--dual">
+                <code>OPay App → AeroAgro Pay</code>
+                <span class="step__detail-or">or</span>
+                <code>*955*3*1*SPRAYING#</code>
+              </div>
+            </div>
+          </div>
+          <div class="step__connector"></div>
+          <div class="step" id="step-2">
+            <div class="step__number">02</div>
+            <div class="step__icon-wrap">
+              <div class="step__icon">💳</div>
+            </div>
+            <div class="step__content">
+              <h3>OPay Micro-Payment</h3>
+              <p>A mission fee (from ₦2,500) is instantly debited from the farmer's OPay wallet or collected via the nearest POS agent.</p>
+              <div class="step__detail">
+                <span class="step__tag">100% within OPay ecosystem</span>
+              </div>
+            </div>
+          </div>
+          <div class="step__connector"></div>
+          <div class="step" id="step-3">
+            <div class="step__number">03</div>
+            <div class="step__icon-wrap">
+              <div class="step__icon">🚁</div>
+            </div>
+            <div class="step__content">
+              <h3>Drone Autonomously Deploys</h3>
+              <p>The payment webhook triggers the nearest Aero-Agent's drone. Motors arm. Flight path is computed. Drone takes off.</p>
+              <div class="step__detail">
+                <span class="step__tag step__tag--green">≈ 90 seconds to airborne</span>
+              </div>
+            </div>
+          </div>
+          <div class="step__connector"></div>
+          <div class="step" id="step-4">
+            <div class="step__number">04</div>
+            <div class="step__icon-wrap">
+              <div class="step__icon">🌾</div>
+            </div>
+            <div class="step__content">
+              <h3>Mission Complete. Crops Protected.</h3>
+              <p>Precise pesticide delivery or multispectral imaging. Farmer receives SMS report. Mission logged to OPay dashboard.</p>
+              <div class="step__detail">
+                <span class="step__tag step__tag--amber">Data-driven yield intelligence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ LIVE DEMO ═══════════════════════════ -->
+    <section class="demo-section" id="demo">
+      <div class="container">
+        <div class="section-label">Live Pitch Demo</div>
+        <h2 class="section-title">Watch a Transaction <span class="accent">Command a Drone</span></h2>
+        <p class="section-sub">This is what we're building on stage. A real OPay payment webhook → real drone motor arms → real spray fires. Click to simulate.</p>
+
+        <div class="demo-stage" id="demo-stage">
+          <!-- Phone -->
+          <div class="demo-device demo-device--phone" id="demo-phone">
+            <div class="demo-device__label">OPay App</div>
+            <div class="phone-screen" id="phone-screen">
+              <div class="phone-screen__header">
+                <div class="phone-status-bar">
+                  <span>9:41</span>
+                  <span>●●●</span>
+                </div>
+                <div class="opay-logo-mini">
+                  <span class="opay-logo-mini__icon">O</span>
+                  <span>Pay</span>
+                </div>
+              </div>
+              <div class="phone-screen__body">
+                <div class="phone-transaction" id="phone-transaction">
+                  <div class="phone-transaction__label">Drone Mission Payment</div>
+                  <div class="phone-transaction__amount">₦2,500.00</div>
+                  <div class="phone-transaction__to">To: AeroAgro Node #04-LG</div>
+                  <div class="phone-transaction__ref">REF: AAP-2024-00847</div>
+                </div>
+                <button class="phone-pay-btn" id="phone-pay-btn">
+                  <span class="phone-pay-btn__text">Pay Now</span>
+                  <span class="phone-pay-btn__icon">→</span>
+                </button>
+                <div class="phone-status-msg" id="phone-status-msg"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connection Line -->
+          <div class="demo-connection" id="demo-connection">
+            <div class="demo-connection__line">
+              <div class="demo-connection__pulse" id="conn-pulse"></div>
+            </div>
+            <div class="demo-connection__label" id="conn-label">Webhook trigger</div>
+          </div>
+
+          <!-- Drone Panel -->
+          <div class="demo-device demo-device--drone" id="demo-drone-panel">
+            <div class="demo-device__label">Drone Control Unit</div>
+            <div class="drone-screen" id="drone-screen">
+              <canvas id="drone-canvas"></canvas>
+              <div class="drone-overlay" id="drone-overlay">
+                <div class="drone-status" id="drone-status">
+                  <div class="drone-status__row">
+                    <span class="drone-status__key">STATUS</span>
+                    <span class="drone-status__val" id="status-val">STANDBY</span>
+                  </div>
+                  <div class="drone-status__row">
+                    <span class="drone-status__key">MOTORS</span>
+                    <span class="drone-status__val" id="motors-val">IDLE</span>
+                  </div>
+                  <div class="drone-status__row">
+                    <span class="drone-status__key">PAYLOAD</span>
+                    <span class="drone-status__val" id="payload-val">ARMED</span>
+                  </div>
+                  <div class="drone-status__row">
+                    <span class="drone-status__key">MISSION</span>
+                    <span class="drone-status__val" id="mission-val">AWAITING</span>
+                  </div>
+                </div>
+                <div class="drone-rpm-bars" id="rpm-bars">
+                  <div class="rpm-bar">
+                    <div class="rpm-bar__fill" id="rpm-1"></div>
+                    <span>M1</span>
+                  </div>
+                  <div class="rpm-bar">
+                    <div class="rpm-bar__fill" id="rpm-2"></div>
+                    <span>M2</span>
+                  </div>
+                  <div class="rpm-bar">
+                    <div class="rpm-bar__fill" id="rpm-3"></div>
+                    <span>M3</span>
+                  </div>
+                  <div class="rpm-bar">
+                    <div class="rpm-bar__fill" id="rpm-4"></div>
+                    <span>M4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spray Panel -->
+          <div class="demo-device demo-device--pump" id="demo-pump-panel">
+            <div class="demo-device__label">ESP32 Payload</div>
+            <div class="pump-screen" id="pump-screen">
+              <canvas id="spray-canvas"></canvas>
+              <div class="pump-overlay">
+                <div class="pump-status" id="pump-status">
+                  <div class="pump-icon" id="pump-icon">💧</div>
+                  <div class="pump-label" id="pump-label">PUMP STANDBY</div>
+                  <div class="pump-pressure" id="pump-pressure">
+                    <span class="pump-pressure__key">PSI</span>
+                    <span class="pump-pressure__val" id="psi-val">0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demo Reset -->
+        <div class="demo-controls">
+          <button class="btn btn--ghost btn--sm" id="demo-reset">↺ Reset Demo</button>
+          <span class="demo-hint" id="demo-hint">Click "Pay Now" on the phone to trigger the sequence</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ NETWORK ═══════════════════════════ -->
+    <section class="network" id="network">
+      <div class="container">
+        <div class="section-label">The Aero-Agent Network</div>
+        <h2 class="section-title">Your OPay Agent is Now an <span class="accent">Aero-Agent</span></h2>
+        <p class="section-sub">We don't build a new network. We upgrade the one that already exists. Every OPay POS agent becomes a drone hub, storing units, swapping batteries, refilling chemicals.</p>
+
+        <div class="network__grid">
+          <div class="network__map" id="network-map">
+            <div class="network__map-bg"></div>
+            <!-- Agent nodes rendered by JS -->
+            <div class="network__nodes" id="network-nodes"></div>
+          </div>
+          <div class="network__benefits">
+            <div class="network__benefit" id="nb-1">
+              <div class="network__benefit-icon">🔋</div>
+              <div>
+                <h4>Battery Swap Hubs</h4>
+                <p>Agents store pre-charged battery packs. Zero drone downtime between missions.</p>
+              </div>
+            </div>
+            <div class="network__benefit" id="nb-2">
+              <div class="network__benefit-icon">🧪</div>
+              <div>
+                <h4>Chemical Refill Points</h4>
+                <p>Pesticide and fertilizer refills stocked at agent locations. Supply chain simplified.</p>
+              </div>
+            </div>
+            <div class="network__benefit" id="nb-3">
+              <div class="network__benefit-icon">💰</div>
+              <div>
+                <h4>Agent Commission Revenue</h4>
+                <p>Every drone mission dispatch earns the agent a commission, a new income stream on existing infrastructure.</p>
+              </div>
+            </div>
+            <div class="network__benefit" id="nb-4">
+              <div class="network__benefit-icon">🔄</div>
+              <div>
+                <h4>Cash Stays in OPay</h4>
+                <p>Farmer pays OPay. Agent earns OPay. Supplies bought via OPay. A closed-loop financial ecosystem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ IMPACT ═══════════════════════════ -->
+    <section class="impact" id="impact">
+      <div class="container">
+        <div class="section-label">The OPay Win</div>
+        <h2 class="section-title">Unlocking a <span class="accent">₦2.4 Trillion</span> Market</h2>
+
+        <div class="impact__cards">
+          <div class="impact__card" id="ic-1">
+            <div class="impact__card-number" data-target="40">0</div>
+            <div class="impact__card-unit">M+</div>
+            <div class="impact__card-label">Smallholder Farmers in Nigeria</div>
+            <div class="impact__card-sub">Addressable market, all potential OPay users</div>
+          </div>
+          <div class="impact__card" id="ic-2">
+            <div class="impact__card-number" data-target="2500">0</div>
+            <div class="impact__card-unit">₦</div>
+            <div class="impact__card-label">Average Mission Fee</div>
+            <div class="impact__card-sub">Per-transaction OPay revenue at massive volume</div>
+          </div>
+          <div class="impact__card impact__card--highlight" id="ic-3">
+            <div class="impact__card-number" data-target="2.4">0</div>
+            <div class="impact__card-unit">T₦</div>
+            <div class="impact__card-label">Annual Agricultural Input Market</div>
+            <div class="impact__card-sub">AeroAgro Pay routes this through OPay rails</div>
+          </div>
+          <div class="impact__card" id="ic-4">
+            <div class="impact__card-number" data-target="5">0</div>
+            <div class="impact__card-unit">x</div>
+            <div class="impact__card-label">Yield Improvement Potential</div>
+            <div class="impact__card-sub">Precision agriculture vs. manual methods</div>
+          </div>
+        </div>
+
+        <div class="impact__quote">
+          <blockquote>
+            "AeroAgro Pay doesn't just serve farmers. It turns every harvest season into a massive OPay transaction event."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CTA ═══════════════════════════ -->
+    <section class="cta-section" id="cta">
+      <canvas id="cta-canvas"></canvas>
+      <div class="cta-section__content">
+        <div class="section-label">Ready to Transform Agriculture?</div>
+        <h2 class="cta-section__title">The Future of Farming Runs on <span class="accent">OPay</span></h2>
+        <p class="cta-section__sub">AeroAgro Pay is built to scale. One platform, every farmer, across every state. The infrastructure is already there, in every OPay agent's hands.</p>
+        <div class="cta-section__actions">
+          <a href="#demo" class="btn btn--primary btn--lg" id="cta-demo-btn">
+            <span class="btn__icon">▶</span> Experience the Demo
+          </a>
+          <a href="#how-it-works" class="btn btn--ghost btn--lg" id="cta-learn-btn">Learn More</a>
+        </div>
+        <div class="cta-section__built-with">
+          <span>Built with</span>
+          <span class="cta-section__partner">OPay Infrastructure</span>
+          <span>·</span>
+          <span class="cta-section__partner">Autonomous Drones</span>
+          <span>·</span>
+          <span class="cta-section__partner">ESP32 IoT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <span class="nav__logo-icon">⬡</span>
+          <span>AeroAgro<span class="accent">Pay</span></span>
+        </div>
+        <p class="footer__tagline">Precision Agriculture. Zero Ownership. Maximum Yield.</p>
+        <p class="footer__copy">© 2024 AeroAgro Pay · Built for OPay Hackathon · Powered by the OPay Ecosystem</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
